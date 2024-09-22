@@ -1,7 +1,7 @@
-import Header from '@/components/layout/Header';
 import Hero from '@/components/layout/Hero';
 import HomeMenu from '@/components/layout/HomeMenu';
 import SectionHeaders from '@/components/layout/SectionHeaders';
+import { Mail, MessageSquare, PhoneCall } from 'lucide-react';
 
 export default function Home() {
 	return (
@@ -10,7 +10,7 @@ export default function Home() {
 			<HomeMenu />
 			<section className="text-center my-16" id="about">
 				<SectionHeaders subHeader={'About Us'} />
-				<div className="text-slate-950 text-4xl max-w-6xl mx-auto mt-4 flex flex-col gap-4">
+				<div className="text-slate-950 text-xl md:text-4xl max-w-6xl mx-auto mt-4 flex flex-col gap-4">
 					<p>
 						We supply the best quality <strong>Ashwagandha</strong>,
 						Giloy, Neem, and other <strong>Herbs</strong>. Our
@@ -39,10 +39,27 @@ export default function Home() {
 				/>
 				<div className="mt-8">
 					<a
-						className="text-4xl underline text-gray-500"
-						href="tel:+46738123123"
+						className="text-2xl text-primary flex items-center justify-center"
+						href="tel:+919893797006"
 					>
-						+46 738 123 123
+						<PhoneCall className="mr-2 mt-[8px]" />: 
+                        +91-9893797006
+					</a>
+					<br />
+					<a
+						className="text-2xl text-primary flex items-center justify-center"
+						href="https://wa.me/919479434961"
+					>
+						<MessageSquare className="mr-2 mt-[11px]" />:
+						+91-9479434961
+					</a>
+					<br />
+					<a
+						href="mailto:raghavdarak2@gmail.com"
+						className="text-2xl text-primary flex items-center justify-center"
+					>
+						<Mail className="mr-2 mt-[7px]" />:
+						raghavdarak2@gmail.com
 					</a>
 				</div>
 			</section>

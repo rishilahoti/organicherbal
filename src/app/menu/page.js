@@ -16,11 +16,14 @@ export default function MenuPage() {
 	}, []);
 	return (
 		<section className="mt-8">
+            <div className='text-center text-primary text-4xl font-bold'>
+                Coming Soon
+            </div>
 			{categories?.length > 0 &&
 				categories.map((c) => (
 					<div key={c._id}>
 						<div className="text-center">
-							<SectionHeaders mainHeader={c.name} />
+							<SectionHeaders subHeader={'Coming Soon'} />
 						</div>
 						<div className="grid sm:grid-cols-3 gap-4 mt-6 mb-12">
 							{menuItems
