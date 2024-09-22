@@ -2,9 +2,18 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState, useCallback } from 'react';
-import squareData from './squareData'; // Import the squareData array
+import squareData from './squareData';
 
 const ShuffleHero = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/catalogue.pdf';
+        link.download = 'catalogue.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <section className="p-6 w-full grid grid-cols-1 md:grid-cols-2 items-center gap-x-8 min-h-screen">
             <div>
@@ -24,7 +33,10 @@ const ShuffleHero = () => {
                     that are sourced directly from farmers or grown in-house. We
                     ensure that the quality of the raw materials is top notch.
                 </p>
-                <button className="flex justify-center w-1/2 bg-primary uppercase items-center border-1 gap-2 px-6 py-2 font-medium text-white transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
+                <button
+                    onClick={handleDownload}
+                    className="flex justify-center w-1/2 bg-primary uppercase items-center border-1 gap-2 px-6 py-2 font-medium text-white transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]"
+                >
                     Catalogue
                 </button>
             </div>
