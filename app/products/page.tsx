@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CategoryFilter from "@/components/CategoryFilter";
 import ProductList from "@/components/ProductList";
 import { data } from "@/data/data";
 import { Product } from "@/types/products";
 import { Search } from "lucide-react";
+import { CircleChevronUp } from "@/components/UpButton";
 
 export default function Page() {
 	const categories = [
@@ -22,6 +23,23 @@ export default function Page() {
 	const [activeCategory, setActiveCategory] = useState<string>("All");
 	const [searchQuery, setSearchQuery] = useState<string>("");
 
+	const [isVisible, setIsVisible] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setIsVisible(window.scrollY > 350);
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+
 	const filteredProducts = data.filter((product) => {
 		const matchesCategory =
 			activeCategory === "All" ||
@@ -37,13 +55,13 @@ export default function Page() {
 	});
 
 	return (
-		<div className="mx-auto max-w-7xl p-6 pt-8">
+		<div className="mx-auto max-w-7xl p-6 pt-8" id="top">
 			<h1 className="mb-4 text-2xl font-bold">Our Products</h1>
-			<div className="relative mb-4">
+			<div className="sticky top-[100px] z-50 mb-4">
 				<input
 					type="text"
 					placeholder="Search products..."
-					className="w-full rounded-md border border-gray-300 p-2"
+					className="w-full rounded-md border bg-transparent p-2 shadow-inner backdrop-blur"
 					value={searchQuery}
 					onChange={(e) => setSearchQuery(e.target.value)}
 				/>
@@ -56,6 +74,14 @@ export default function Page() {
 				onSelectCategory={setActiveCategory}
 			/>
 			<ProductList products={filteredProducts} />
+			{isVisible && (
+				<div
+					className="sticky bottom-5 z-50 w-fit"
+					onClick={scrollToTop}
+				>
+					<CircleChevronUp />
+				</div>
+			)}
 		</div>
 	);
 }
