@@ -4,11 +4,13 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Nav } from "@/components/Nav";
 import { cn } from "@/lib/utils";
 import { Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
 	subsets: ["latin"],
 	weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-	variable: "--font-poppins", 
+	variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +26,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={cn("mesh-gradient min-h-screen antialiased", poppins.variable)}>
+			<body
+				className={cn(
+					"mesh-gradient min-h-screen antialiased",
+					poppins.variable,
+				)}
+			>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
@@ -34,6 +41,8 @@ export default function RootLayout({
 					<Nav />
 					{children}
 				</ThemeProvider>
+				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
