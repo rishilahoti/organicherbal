@@ -1,5 +1,5 @@
 "use client";
-import { CloudDownload } from "@/components/CloudDownload";
+// import { CloudDownload } from "@/components/CloudDownload";
 import { Grip } from "@/components/ProductAlbum";
 import Image from "next/image";
 
@@ -57,9 +57,9 @@ export default function Home() {
 const ButtonHover = () => {
 	return (
 		<div className="flex cursor-pointer flex-wrap justify-evenly gap-x-5 md:justify-start">
-			<DrawOutlineButton>
+			{/* <DrawOutlineButton>
 				<CloudDownload />
-			</DrawOutlineButton>
+			</DrawOutlineButton> */}
 			<DrawOutlineButton>
 				<Grip />
 			</DrawOutlineButton>
