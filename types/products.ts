@@ -4,6 +4,7 @@ export interface Product {
 	categories: (
 		| "Herbs"
 		| "Roots"
+        | "Leaves"
 		| "Spices"
 		| "Powder"
 		| "Seeds"

@@ -80,10 +80,7 @@ const DrawOutlineButton = ({
 			className="duration-\[400ms\] group relative font-medium transition-colors hover:text-lime-400"
 		>
 			<span className="flex flex-wrap">{children}</span>
-			<span className="absolute left-0 top-0 h-[2px] w-0 bg-lime-400 transition-all duration-100 group-hover:w-full" />
-			<span className="absolute right-0 top-0 h-0 w-[2px] bg-lime-400 transition-all delay-100 duration-100 group-hover:h-full" />
-			<span className="absolute bottom-0 right-0 h-[2px] w-0 bg-lime-400 transition-all delay-200 duration-100 group-hover:w-full" />
-			<span className="absolute bottom-0 left-0 h-0 w-[2px] bg-lime-400 transition-all delay-300 duration-100 group-hover:h-full" />
+			
 		</button>
 	);
 };

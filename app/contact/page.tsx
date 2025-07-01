@@ -113,9 +113,9 @@ export default function ContactForm() {
             transition={{ duration: 0.3 }}
         >
             {[
-                { id: "name", label: "Name *", type: "text", required: true },
-                { id: "phone", label: "Phone *", type: "tel", required: true },
-                { id: "email", label: "Email *", type: "email", required: true },
+                { id: "name", label: "Name", type: "text", required: true },
+                { id: "phone", label: "Phone", type: "tel", required: true },
+                { id: "email", label: "Email", type: "email", required: false },
                 { id: "company", label: "Company Name", type: "text", required: false },
             ].map(({ id, label, type, required }) => (
                 <div key={id} className="mb-4">
@@ -129,25 +129,24 @@ export default function ContactForm() {
                         value={(formData as any)[id]}
                         onChange={handleChange}
                         required={required}
-                        className="w-full rounded-md border px-3 py-2"
                         aria-required={required}
-                        aria-label={label}
+                        className="w-full rounded-md border px-3 py-2"
+                        placeholder={`Enter your ${label.toLowerCase()}`}
+                        autoComplete={id === "phone" ? "tel" : "off"}
                     />
                 </div>
             ))}
 
             <div className="mb-4">
                 <label htmlFor="service" className="mb-2 block text-gray-700">
-                    Service *
+                    Service
                 </label>
                 <select
                     id="service"
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    required
                     className="w-full rounded-md border px-3 py-2"
-                    aria-required="true"
                 >
                     <option value="">Select a service</option>
                     {servicesOptions.map((service) => (
@@ -160,16 +159,14 @@ export default function ContactForm() {
 
             <div className="mb-4">
                 <label htmlFor="message" className="mb-2 block text-gray-700">
-                    Message *
+                    Message
                 </label>
                 <textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    required
                     className="h-32 w-full rounded-md border px-3 py-2"
-                    aria-required="true"
                 />
             </div>
 

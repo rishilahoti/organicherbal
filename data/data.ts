@@ -4,14 +4,14 @@ export const data: Product[] = [
 	{
 		id: 1,
 		name: "Ashwagandha (Withania somnifera)",
-		categories: ["Roots"],
-		image: "/images/ashwagandha.jpg",
+		categories: ["Roots", "Powder", "Leaves", "Seeds", "TBC"],
+		image: "/images/ashwa.jpg",
 		description:
 			"An adaptogenic herb used to reduce stress and enhance vitality.",
 	},
 	{
 		id: 2,
-		name: "Muskdana (Mucuna pruriens)",
+		name: "Muskdana/ Ambrette seeds (Abelmoschus moschatus)",
 		categories: ["Seeds"],
 		image: "/images/muskdana.jpg",
 		description:
@@ -20,23 +20,23 @@ export const data: Product[] = [
 	{
 		id: 3,
 		name: "Gunja (Abrus precatorius)",
-		categories: ["Seeds"],
-		image: "/images/gunja.jpg",
+		categories: ["Seeds", "Leaves"],
+		image: "/images/gunja.webp",
 		description:
 			"Seeds that are used in traditional healing but are toxic in raw form.",
 	},
 	{
 		id: 4,
 		name: "Shikakai (Acacia concinna)",
-		categories: ["Herbs"],
-		image: "/images/shikakai.jpg",
+		categories: ["Herbs", "Powder"],
+		image: "/images/shikakai.webp",
 		description:
 			"Powder made from a plant traditionally used for hair care and as a natural shampoo.",
 	},
 	{
 		id: 5,
 		name: "Babool (Acacia nilotica)",
-		categories: ["Herbs"],
+		categories: ["Herbs", "Roots", "Seeds"],
 		image: "/images/babool.jpg",
 		description:
 			"Leaves known for their healing properties, used in treating wounds and infections.",
@@ -45,7 +45,7 @@ export const data: Product[] = [
 		id: 6,
 		name: "Atis (Aconite) (Aconitum heterophyllum)",
 		categories: ["Roots"],
-		image: "/images/atis.jpg",
+		image: "/images/aconite.webp",
 		description:
 			"Root used in traditional medicine for pain relief, though toxic if not prepared correctly.",
 	},
@@ -53,7 +53,7 @@ export const data: Product[] = [
 		id: 7,
 		name: "Vacha (Bach) (Acorus calamus)",
 		categories: ["Roots"],
-		image: "/images/vacha.jpg",
+		image: "/images/vacha.webp",
 		description:
 			"Root traditionally used for improving cognition and digestive health.",
 	},
@@ -61,7 +61,7 @@ export const data: Product[] = [
 		id: 8,
 		name: "Bel (Aegle marmelos)",
 		categories: ["Herbs"],
-		image: "/images/bel.jpg",
+		image: "/images/bel.webp",
 		description:
 			"Fruit used to treat digestive issues and improve immunity.",
 	},
@@ -84,7 +84,7 @@ export const data: Product[] = [
 		id: 11,
 		name: "Onion (Dehydrated) (Allium cepa)",
 		categories: ["Powder"],
-		image: "/images/onion.jpg",
+		image: "/images/onion.png",
 		description: "Dehydrated onion commonly used as a flavor enhancer.",
 	},
 	{
@@ -99,7 +99,7 @@ export const data: Product[] = [
 		id: 13,
 		name: "Aloe Vera (Aloe barbadensis)",
 		categories: ["Herbs"],
-		image: "/images/aloe-vera.jpg",
+		image: "/images/aloevera.webp",
 		description:
 			"Aloe vera gel is known for its soothing and healing properties.",
 	},
@@ -115,7 +115,7 @@ export const data: Product[] = [
 		id: 15,
 		name: "Saptaparni (Alstonia scholaris)",
 		categories: ["Herbs"],
-		image: "/images/saptaparni.jpg",
+		image: "/images/saptaparni.png",
 		description:
 			"Leaves used in traditional medicine for treating fever and inflammation.",
 	},
@@ -131,14 +131,14 @@ export const data: Product[] = [
 		id: 17,
 		name: "Kalmegh (Andrographis paniculata)",
 		categories: ["Herbs"],
-		image: "/images/kalmegh.jpg",
+		image: "/images/kalmegh.webp",
 		description: "Herb known for its immune-boosting properties.",
 	},
 	{
 		id: 18,
 		name: "Ajmoda (Celery) (Apium graveolens)",
 		categories: ["Seeds"],
-		image: "/images/ajmoda.jpg",
+		image: "/images/ajmoda.webp",
 		description: "Seeds used for digestive health and improving appetite.",
 	},
 	{
@@ -153,7 +153,7 @@ export const data: Product[] = [
 		id: 20,
 		name: "Safed Musli (Chlorophytum borivilianum)",
 		categories: ["Roots"],
-		image: "/images/safed-musli.jpg",
+		image: "/images/safed-musli.webp",
 		description:
 			"Root used for energy enhancement and improving sexual health.",
 	},
@@ -161,7 +161,7 @@ export const data: Product[] = [
 		id: 21,
 		name: "Shatavari (White) (Asparagus racemosus)",
 		categories: ["Roots"],
-		image: "/images/shatavari.jpg",
+		image: "/images/shatavari.webp",
 		description:
 			"Root traditionally used for reproductive health and hormonal balance.",
 	},
@@ -176,15 +176,15 @@ export const data: Product[] = [
 		id: 23,
 		name: "Neem (Azadirachta indica)",
 		categories: ["Herbs"],
-		image: "/images/neem.jpg",
+		image: "/images/neem.webp",
 		description:
 			"Leaves known for their antibacterial, antifungal, and antiviral properties.",
 	},
 	{
 		id: 24,
-		name: "Brahmi Jal - Nir (Bacopa monnieri)",
+		name: "Jal Brahmi - Nir (Bacopa monnieri)",
 		categories: ["Herbs"],
-		image: "/images/brahmi-jal.jpg",
+		image: "/images/brahmi.png",
 		description:
 			"Water infused with Brahmi, used to enhance cognitive function and reduce stress.",
 	},
@@ -361,7 +361,7 @@ export const data: Product[] = [
 	},
 	{
 		id: 47,
-		name: "Brahmi (Bacopa monnieri)",
+		name: "Brahmi/Gotukola (Centella Asiatica)",
 		categories: ["Herbs"],
 		image: "/images/brahmi.jpg",
 		description: "Herb known for improving memory and reducing stress.",
