@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client";
+"use client"
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FiCheckCircle, FiAlertCircle, FiLoader } from "react-icons/fi";
@@ -76,16 +76,16 @@ export default function ContactForm() {
         setSubmitStatus(null);
 
         const result = contactFormSchema.safeParse(formData);
-	if (!result.success) {
-		const fieldErrors: Record<string, string> = {};
-		for (const issue of result.error.issues) {
-			fieldErrors[issue.path[0]] = issue.message;
-		}
-		setErrors(fieldErrors);
-		setSubmitStatus("error");
-		setSubmitting(false);
-		return;
-	}
+        if (!result.success) {
+            const fieldErrors: Record<string, string> = {};
+            for (const issue of result.error.issues) {
+                fieldErrors[issue.path[0]] = issue.message;
+            }
+            setErrors(fieldErrors);
+            setSubmitStatus("error");
+            setSubmitting(false);
+            return;
+        }
 
         // Client-side basic validation
         if (!phoneRegex.test(formData.phone)) {
@@ -129,7 +129,7 @@ export default function ContactForm() {
     return (
         <motion.form
             onSubmit={handleSubmit}
-            className="my-5 mx-auto rounded-lg md:w-[50%] p-5 bg-transparent bg-opacity-15 backdrop-blur"
+            className="mx-auto rounded-lg p-5 md:min-w-[400px] bg-white dark:bg-slate-950 bg-opacity-85 backdrop-blur"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}

@@ -14,11 +14,12 @@ const schema = z.object({
 			/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
 			"Invalid phone number",
 		),
-	email: z.string().optional(),
+	email: z.string().email().optional().or(z.literal("")),
 	company: z.string().optional(),
 	service: z.string().optional(),
 	message: z.string().optional(),
 });
+
 
 // Early error handling for missing envs
 if (
@@ -34,7 +35,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 // Rate limiter (10 requests per 60 seconds)
 const ratelimit = new Ratelimit({
 	redis: Redis.fromEnv(),
-	limiter: Ratelimit.slidingWindow(10, "60 s"),
+	limiter: Ratelimit.slidingWindow(30, "60 s"),
 });
 
 export async function POST(request: NextRequest) {

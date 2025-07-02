@@ -59,7 +59,7 @@ export const data: Product[] = [
 	},
 	{
 		id: 8,
-		name: "Bel (Aegle marmelos)",
+		name: "Bael/Belgiri (Aegle marmelos)",
 		categories: ["Herbs"],
 		image: "/images/bel.webp",
 		description:
@@ -129,7 +129,7 @@ export const data: Product[] = [
 	},
 	{
 		id: 17,
-		name: "Kalmegh (Andrographis paniculata)",
+		name: "Kalmegh/Chirayta (Andrographis paniculata)",
 		categories: ["Herbs"],
 		image: "/images/kalmegh.webp",
 		description: "Herb known for its immune-boosting properties.",
@@ -145,7 +145,7 @@ export const data: Product[] = [
 		id: 19,
 		name: "Satyanashi (Yellow Dhatura) (Datura metel)",
 		categories: ["Flowers"],
-		image: "/images/satyanashi.jpg",
+		image: "/images/satynashi.jpg",
 		description:
 			"Flower used in traditional medicine but highly toxic in raw form.",
 	},
@@ -167,7 +167,7 @@ export const data: Product[] = [
 	},
 	{
 		id: 22,
-		name: "Gokshura (Tribulus terrestris)",
+		name: "Gokshura/Gohkru (Tribulus terrestris)",
 		categories: ["Seeds"],
 		image: "/images/gokshura.jpg",
 		description: "Seeds used to improve libido and urinary tract health.",
@@ -175,7 +175,7 @@ export const data: Product[] = [
 	{
 		id: 23,
 		name: "Neem (Azadirachta indica)",
-		categories: ["Herbs"],
+		categories: ["Leaves","Seeds"],
 		image: "/images/neem.webp",
 		description:
 			"Leaves known for their antibacterial, antifungal, and antiviral properties.",
@@ -238,7 +238,7 @@ export const data: Product[] = [
 		id: 31,
 		name: "Annato Seeds (Bixa orellana)",
 		categories: ["Seeds"],
-		image: "/images/annato-seeds.jpg",
+		image: "/images/annato-seeds.webp",
 		description:
 			"Seeds used as a natural dye and for their antioxidant properties.",
 	},
@@ -370,7 +370,7 @@ export const data: Product[] = [
 		id: 48,
 		name: "Quinoa (Chenopodium quinoa)",
 		categories: ["Seeds"],
-		image: "/images/quinoa.jpg",
+		image: "/images/quinoa.webp",
 		description:
 			"Highly nutritious seeds often used in cooking as a gluten-free grain alternative.",
 	},
@@ -424,7 +424,7 @@ export const data: Product[] = [
 		id: 55,
 		name: "Mosambi Chilka (Citrus limetta)",
 		categories: ["Peel"],
-		image: "/images/mosambi-chilka.jpg",
+		image: "/images/mosambi.jpg",
 		description:
 			"Peel of sweet lime used in detoxification and digestive aids.",
 	},
@@ -1259,7 +1259,7 @@ export const data: Product[] = [
 
 	{
 		id: 136,
-		name: "Chavi Pipal (Long Pepper) (Piper longum)",
+		name: "Choti Pipal (Long Pepper) (Piper longum)",
 		categories: ["Spices"],
 		image: "/images/chavi-pipal.jpg",
 		description:
@@ -1268,9 +1268,9 @@ export const data: Product[] = [
 
 	{
 		id: 149,
-		name: "Rose Petals (Rosa spp.)",
+		name: "Rose Petals/Gulab (Rosa spp.)",
 		categories: ["Flowers"],
-		image: "/images/rose-petals.jpg",
+		image: "/images/rose.jpg",
 		description:
 			"Petals used for their fragrance in beauty products and traditional medicines.",
 	},
@@ -1370,7 +1370,7 @@ export const data: Product[] = [
 	},
 	{
 		id: 181,
-		name: "Giloy (Tinospora cordifolia)",
+		name: "Giloy/Guduchi (Tinospora cordifolia)",
 		categories: ["Herbs"],
 		image: "/images/giloy.jpg",
 		description:
@@ -1483,7 +1483,7 @@ export const data: Product[] = [
 		id: 184,
 		name: "Methi (Fenugreek seeds) (Trigonella foenum-graecum)",
 		categories: ["Seeds"],
-		image: "/images/methi.jpg",
+		image: "/images/methi.webp",
 		description:
 			"Seeds used for improving digestion, reducing blood sugar, and managing cholesterol.",
 	},

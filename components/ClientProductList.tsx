@@ -83,7 +83,7 @@ export default function ClientProductList() {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <Search className="absolute right-3 top-1/2 size-5 -translate-y-1/2 transform text-muted-foreground " />
+                <Search className="absolute right-3 top-1/2 size-5 -translate-y-1/2 transform text-muted-foreground dark:text-white" />
             </div>
 
             <div className="flex justify-between mb-4 w-full rounded-md border bg-transparent shadow-inner backdrop-blur">
@@ -105,7 +105,7 @@ export default function ClientProductList() {
                                 onClick={() => updateSortOrder(key as any)}
                                 className={`relative flex items-center gap-1 overflow-hidden rounded-md px-3 py-1.5 text-sm font-medium transition-colors duration-300 ${isActive
                                     ? "text-slate-900"
-                                    : "text-slate-700 hover:bg-slate-700 hover:text-slate-200"
+                                    : "text-slate-700 dark:text-white hover:bg-slate-700 hover:text-slate-200"
                                     }`}
                                 title={title}
                             >
@@ -114,7 +114,7 @@ export default function ClientProductList() {
                                     <motion.span
                                         layoutId="sort-highlight"
                                         transition={{ type: "spring", stiffness: 500, damping: 30 }}
-                                        className="absolute inset-0 z-0 rounded-md bg-gradient-to-b from-lime-200 to-lime-400"
+                                        className="absolute inset-0 z-0 rounded-md bg-gradient-to-b text-slate-800 from-lime-200 to-lime-400"
                                     />
                                 )}
                             </button>

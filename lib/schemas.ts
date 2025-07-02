@@ -6,12 +6,12 @@ export const contactFormSchema = z.object({
 		.string()
 		.regex(
 			/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/,
-			"Invalid phone number",
+			"Invalid phone number"
 		),
-	email: z.string().email(),
+	email: z.string().email("Invalid email").optional().or(z.literal("")),
 	company: z.string().optional(),
-	service: z.string().min(1, "Please select a service"),
-	message: z.string().min(10, "Message must be at least 10 characters"),
+	service: z.string().optional(),
+	message: z.string().optional(),
 });
 
 export type ContactFormData = z.infer<typeof contactFormSchema>;
