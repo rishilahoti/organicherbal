@@ -487,7 +487,7 @@ export const data: Product[] = [
 		id: 63,
 		name: "Coriander Seeds (Dhaniya) (Coriandrum sativum)",
 		categories: ["Seeds"],
-		image: "/images/coriander-seeds.jpg",
+		image: "/images/coriander.jpg",
 		description:
 			"Seeds used as a culinary spice and for their digestive benefits.",
 	},
@@ -503,7 +503,7 @@ export const data: Product[] = [
 		id: 65,
 		name: "Pumpkin Seeds (Cucurbita pepo)",
 		categories: ["Seeds"],
-		image: "/images/pumpkin-seeds.jpg",
+		image: "/images/pumpkin.jpg",
 		description:
 			"Seeds rich in nutrients and commonly used in cooking and snacks.",
 	},
@@ -613,7 +613,7 @@ export const data: Product[] = [
 		id: 73,
 		name: "Dhatura (Datura stramonium)",
 		categories: ["Herbs"],
-		image: "/images/dhatura.jpg",
+		image: "/images/dhatura.webp",
 		description:
 			"Herb with potent medicinal properties, used for treating various ailments.",
 	},
@@ -698,9 +698,9 @@ export const data: Product[] = [
 	},
 	{
 		id: 94,
-		name: "Marod Fali (Mucuna pruriens)",
+		name: "Marodfali (Mucuna pruriens)",
 		categories: ["Herbs"],
-		image: "/images/marod-fali.jpg",
+		image: "/images/Marodfali.jpg",
 		description:
 			"Seeds used for their neuroprotective and aphrodisiac properties.",
 	},
@@ -787,7 +787,7 @@ export const data: Product[] = [
 		id: 102,
 		name: "Henna (Mehndi) leaf (Lawsonia inermis)",
 		categories: ["TBC"],
-		image: "/images/henna.jpg",
+		image: "/images/henna.webp",
 		description:
 			"Leaves used for dyeing skin, hair, and treating various skin ailments.",
 	},
@@ -810,7 +810,7 @@ export const data: Product[] = [
 		id: 105,
 		name: "Flax Seed (Linum usitatissimum)",
 		categories: ["Seeds"],
-		image: "/images/flax-seed.jpg",
+		image: "/images/flax.jpg",
 		description:
 			"Seeds rich in omega-3 fatty acids, used for heart health and digestive support.",
 	},
@@ -898,7 +898,7 @@ export const data: Product[] = [
 		id: 116,
 		name: "Noni (Morinda citrifolia)",
 		categories: ["Herbs"],
-		image: "/images/noni.jpg",
+		image: "/images/Noni.jpg",
 		description:
 			"Fruit used for its immune-boosting and anti-inflammatory properties.",
 	},
@@ -922,7 +922,7 @@ export const data: Product[] = [
 		id: 119,
 		name: "Kaunch (Mucuna pruriens)",
 		categories: ["Seeds"],
-		image: "/images/kaunch.jpg",
+		image: "/images/Kaunch.jpg",
 		description:
 			"Seeds used for their aphrodisiac and neuroprotective properties.",
 	},
@@ -930,7 +930,7 @@ export const data: Product[] = [
 		id: 120,
 		name: "Curry (Kadi) Leaves (Murraya koenigii)",
 		categories: ["TBC"],
-		image: "/images/curry-leaves.jpg",
+		image: "/images/Curry.webp",
 		description:
 			"Leaves used for their aromatic flavor in cooking and for medicinal purposes.",
 	},
@@ -977,7 +977,7 @@ export const data: Product[] = [
 		id: 126,
 		name: "Basil Seeds (Tukmaria, Sabja Seeds) (Ocimum basilicum)",
 		categories: ["Seeds"],
-		image: "/images/basil-seeds.jpg",
+		image: "/images/basil.webp",
 		description:
 			"Seeds used for their hydrating properties and in desserts and drinks.",
 	},
@@ -1236,7 +1236,7 @@ export const data: Product[] = [
 		id: 152,
 		name: "Chia Seeds (Salvia hispanica)",
 		categories: ["Seeds"],
-		image: "/images/chia-seeds.jpg",
+		image: "/images/Chia.webp",
 		description:
 			"Seeds rich in omega-3 fatty acids, fiber, and antioxidants.",
 	},
